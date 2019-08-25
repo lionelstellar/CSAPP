@@ -7,12 +7,13 @@
  */
 #include <stdio.h>
 int bitAnd(int x, int y){
-    printf("%d\n", x);
-    return 0;
+    int result = ~((~x) | (~y));
+    printf("%d\n", result);
+    return result;
 }
 
 int main(){
-    return 0;
+    bitAnd(6,5);
 }
 
 
