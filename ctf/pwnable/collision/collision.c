@@ -22,10 +22,13 @@ int main(int argc, char* argv[]){
 	}
 
 	if(hashcode == check_password( argv[1] )){
-		system("/bin/cat flag");
+		printf("flag\n");
+		// system("/bin/cat flag");
 		return 0;
 	}
 	else
 		printf("wrong passcode.\n");
 	return 0;
 }
+// ./col %0H?%0%?@0%?00%?2I%%
+// daddy! I just managed to create a hash collision :)

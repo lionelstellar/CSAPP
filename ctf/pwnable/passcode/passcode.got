@@ -1,0 +1,19 @@
+passcode@prowl:~$ readelf -r passcode
+
+Relocation section '.rel.dyn' at offset 0x388 contains 2 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+08049ff0  00000606 R_386_GLOB_DAT    00000000   __gmon_start__
+0804a02c  00000b05 R_386_COPY        0804a02c   stdin@GLIBC_2.0
+
+Relocation section '.rel.plt' at offset 0x398 contains 9 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+0804a000  00000107 R_386_JUMP_SLOT   00000000   printf@GLIBC_2.0
+0804a004  00000207 R_386_JUMP_SLOT   00000000   fflush@GLIBC_2.0
+0804a008  00000307 R_386_JUMP_SLOT   00000000   __stack_chk_fail@GLIBC_2.4
+0804a00c  00000407 R_386_JUMP_SLOT   00000000   puts@GLIBC_2.0
+0804a010  00000507 R_386_JUMP_SLOT   00000000   system@GLIBC_2.0
+0804a014  00000607 R_386_JUMP_SLOT   00000000   __gmon_start__
+0804a018  00000707 R_386_JUMP_SLOT   00000000   exit@GLIBC_2.0
+0804a01c  00000807 R_386_JUMP_SLOT   00000000   __libc_start_main@GLIBC_2.0
+0804a020  00000907 R_386_JUMP_SLOT   00000000   __isoc99_scanf@GLIBC_2.7
+
